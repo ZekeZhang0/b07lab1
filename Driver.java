@@ -27,9 +27,9 @@ public class Driver {
         //e
         String outputFileName = "/Users/zhangxiaoran/Desktop/j_code/0/src/output.txt";
         p.saveToFile(outputFileName);
-        BufferedReader br = new BufferedReader(new FileReader(outputFileName));
-        String savedLine = br.readLine();
-        br.close();
+        BufferedReader b = new BufferedReader(new FileReader(outputFileName));
+        String savedLine = b.readLine();
+        b.close();
         System.out.println("Content of saved file:");
         System.out.println(savedLine);
 
